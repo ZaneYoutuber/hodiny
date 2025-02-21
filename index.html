@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 
@@ -9,27 +9,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="digital-clock">
-    <div class="week">
-        <div>PONDĚLÍ</div>
-        <div>ÚTERÝ</div>
-        <div>STŘEDA</div>
-        <div>ČTVRTEK</div>
-        <div>PÁTEK</div>
-        <div>SOBOTA</div>
-        <div>NEDĚLE</div>
-        
-    </div>
-    <div class="time-container">
-        <div class="time">
-            <span class="hour">12</span>
-            <span class="dot">:</span>
-            <span class="min">00</span>
+    <div class="clock-wrapper">
+        <div class="digital-clock">
+            <div class="week">
+                <div class="weekday" data-day="1">PONDĚLÍ</div>
+                <div class="weekday" data-day="2">ÚTERÝ</div>
+                <div class="weekday" data-day="3">STŘEDA</div>
+                <div class="weekday" data-day="4">ČTVRTEK</div>
+                <div class="weekday" data-day="5">PÁTEK</div>
+                <div class="weekday" data-day="6">SOBOTA</div>
+                <div class="weekday" data-day="0">NEDĚLE</div>
+            </div>
+            <div class="time-container">
+                <div class="time">
+                    <span class="hour">12</span>
+                    <span class="dot">:</span>
+                    <span class="min">00</span>
+                    <span class="dot">:</span>
+                    <span class="sec">00</span>
+                </div>
+                <div class="date"></div>
+                <div class="temperature">
+                    <span class="temp-value">--</span>°C
+                </div>
+            </div>
         </div>
-        <div class="date"></div>
     </div>
-    
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
